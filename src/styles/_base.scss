@@ -1,0 +1,29 @@
+// Variables for button styles
+$button-color: #dd95ff;
+$border-color: black;
+$shadow-color: black;
+$active-transform: translateY(2px) translateX(3px);
+
+@mixin shadow($variant: 'animated') {
+  box-shadow: 2px 3px $shadow-color;
+  transition: box-shadow 20ms ease-in-out, transform 40ms ease-in-out;
+
+  @if $variant == 'animated' {
+    &:active {
+      transform: $active-transform;
+      box-shadow: 0 0;
+    }
+  }
+}
+
+%button {
+  display: inline-flex;
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  height: fit-content;
+
+  // Modifier for rounded corners
+  &.rounded {
+    border-radius: 100px;
+  }
+}

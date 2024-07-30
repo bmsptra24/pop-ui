@@ -1,0 +1,27 @@
+@use '../../styles/base' as *;
+
+.pop-btn {
+  // Extend the placeholder selector from base
+  @extend %button;
+  @include shadow();
+
+  // Basic button styling
+  cursor: pointer;
+  background-color: $button-color;
+  justify-content: center;
+  align-items: center;
+
+  &.size {
+    &--sm {
+      padding: 4px 10px;
+    }
+    &--md {
+      font-size: 1em;
+      padding: 8px 24px;
+    }
+    &--lg {
+      font-size: 1.01em;
+      padding: 12px 32px;
+    }
+  }
+}

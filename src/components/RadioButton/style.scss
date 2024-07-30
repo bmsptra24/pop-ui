@@ -1,0 +1,57 @@
+@use '../../styles/base' as *;
+
+.pop-radio-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  position: relative;
+
+  // Extend the placeholder selector from base
+  > .pop-radio-btn__control {
+    @extend %button;
+    @include shadow('no-animate');
+    width: 16px;
+    height: 16px;
+    position: relative;
+    transition: all 200ms ease-in-out;
+
+    &.active {
+      background-color: #f5e1ff;
+    }
+
+    > .active-poin {
+      position: absolute;
+      border: 1px solid $border-color;
+      inset: 3px;
+      background-color: rgb(110, 110, 110);
+      z-index: 1;
+      border-radius: 100px;
+      background-color: $button-color;
+    }
+  }
+
+  > .pop-radio-btn__input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &.size {
+    &--sm {
+      padding: 8px;
+    }
+    &--md {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+    &--lg {
+      font-size: 1.02em;
+      padding: 12px;
+    }
+  }
+}

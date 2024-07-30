@@ -1,0 +1,22 @@
+@use '../../styles/base' as *;
+
+.pop-input {
+  // Extend the placeholder selector from base
+  @extend %button;
+  @include shadow('no-animate');
+  background-color: #f5e1ff;
+
+  &.size {
+    &--sm {
+      padding: 8px;
+    }
+    &--md {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+    &--lg {
+      font-size: 1.02em;
+      padding: 12px;
+    }
+  }
+}

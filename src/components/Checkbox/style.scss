@@ -1,0 +1,46 @@
+@use '../../styles/base' as *;
+
+.pop-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  position: relative;
+
+  // Extend the placeholder selector from base
+  > .pop-checkbox__control {
+    @extend %button;
+    @include shadow('no-animate');
+    width: 16px;
+    height: 16px;
+    transition: all 200ms ease-in-out;
+
+    &.active {
+      background-color: $button-color;
+    }
+  }
+
+  > .pop-checkbox__input {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &.size {
+    &--sm {
+      padding: 8px;
+    }
+    &--md {
+      font-size: 0.9em;
+      padding: 10px;
+    }
+    &--lg {
+      font-size: 1.02em;
+      padding: 12px;
+    }
+  }
+}
