@@ -1,30 +1,44 @@
-# React + TypeScript + Vite
+# Pop UI 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pop UI is a React-based UI library that adopts the neubrutalism style, designed for frontend programmers to easily incorporate unique and stylish components into their projects.
 
-Currently, two official plugins are available:
+![Pop UI Logo](https://github.com/bmsptra24/pop-ui/blob/main/docs/preview/preview.png?raw=true)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Table of Contents
 
-## Expanding the ESLint configuration
+- [Introduction](#introduction) 📖
+- [Features](#features) ✨
+- [Installation](#installation) 💾
+- [Usage](#usage) 📚
+- [Contributing](#contributing) 🤝
+- [License](#license) 📝
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Introduction 📖
 
-- Configure the top-level `parserOptions` property like this:
+Pop UI is a modern UI library built with React and Sass, aiming to provide a set of reusable components styled with neubrutalism. This library allows developers to effortlessly add a distinct visual appeal to their applications.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Features ✨
+
+- **Neubrutalism Style:** Unique and modern design style.
+- **React Components:** Built specifically for React applications.
+- **Sass Integration:** Easy to customize styles using Sass.
+
+## Installation 💾
+
+To install Pop UI, you can use npm or yarn:
+
+```bash
+# Not finished yet
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Usage 📚
+
+Since the project is still under development, usage examples will be added once the initial version is released. Stay tuned for updates!
+
+## Contributing 🤝
+
+Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss any changes.
+
+## License 📝
+
+This project is licensed under the MIT License.
