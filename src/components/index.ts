@@ -1,8 +1,6 @@
-import Button from './Button'
-import Checkbox from './Checkbox'
-import IconButton from './IconButton'
-import Input from './Input'
-import RadioButton from './RadioButton'
-import Text from './Text'
-
-export { Checkbox, RadioButton, Button, IconButton, Input, Text }
+export { default as Button } from './Button'
+export { default as Checkbox } from './Checkbox'
+export { default as IconButton } from './IconButton'
+export { default as Input } from './Input'
+export { default as RadioButton } from './RadioButton'
+export { default as Text } from './Text'

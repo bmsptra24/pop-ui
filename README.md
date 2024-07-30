@@ -37,7 +37,7 @@ Since the project is still under development, usage examples will be added once 
 
 ## Contributing 🤝
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue to discuss any changes.
+Contributions are welcome! Please see the [CONTRIBUTING.md](https://github.com/bmsptra24/pop-ui/blob/main/docs/add-new-component.md) file for guidelines on how to contribute.
 
 ## License 📝
 
