@@ -1,6 +1,13 @@
 import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import "./App.scss";
-import { Button, Checkbox, IconButton, Input, RadioButton } from "./components";
+import {
+  Button,
+  Checkbox,
+  IconButton,
+  Input,
+  RadioButton,
+  Text,
+} from "./components";
 import { useState } from "react";
 // import { ThemeProvider } from "./lib/ThemeContext";
 
@@ -15,6 +22,16 @@ function App() {
   return (
     // <ThemeProvider>
     <main>
+      <section>
+        <Text size="xxxxl">Title 1</Text>
+        <Text size="xxxl">Title 2</Text>
+        <Text size="xxl">Title 3</Text>
+        <Text size="xl">Title 4</Text>
+        <Text size="lg">Title 5</Text>
+        <Text size="md">Title 6</Text>
+        <Text size="sm">Title 7</Text>
+        <Text size="xs">Title 8</Text>
+      </section>
       <section>
         <Button shape="square" size="sm">
           Button
